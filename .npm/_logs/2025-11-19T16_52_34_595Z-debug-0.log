@@ -1,0 +1,28 @@
+0 verbose cli /Users/bethegnt/.nvm/versions/node/v22.11.0/bin/node /Users/bethegnt/.nvm/versions/node/v22.11.0/lib/node_modules/npm/bin/npm-cli.js
+1 info using npm@10.9.0
+2 info using node@v22.11.0
+3 silly config load:file:/Users/bethegnt/.nvm/versions/node/v22.11.0/lib/node_modules/npm/npmrc
+4 silly config load:file:/Users/bethegnt/Documents/app/.npmrc
+5 silly config load:file:/Users/bethegnt/.npmrc
+6 silly config load:file:/Users/bethegnt/.nvm/versions/node/v22.11.0/etc/npmrc
+7 verbose title npm exec tailwindcss init -p
+8 verbose argv "exec" "--" "tailwindcss" "init" "-p"
+9 verbose logfile logs-max:10 dir:/Users/bethegnt/.npm/_logs/2025-11-19T16_52_34_595Z-
+10 verbose logfile /Users/bethegnt/.npm/_logs/2025-11-19T16_52_34_595Z-debug-0.log
+11 silly logfile start cleaning logs, removing 1 files
+12 silly logfile done cleaning log files
+13 silly packumentCache heap:2197815296 maxSize:549453824 maxEntrySize:274726912
+14 verbose stack Error: could not determine executable to run
+14 verbose stack     at getBinFromManifest (/Users/bethegnt/.nvm/versions/node/v22.11.0/lib/node_modules/npm/node_modules/libnpmexec/lib/get-bin-from-manifest.js:17:23)
+14 verbose stack     at exec (/Users/bethegnt/.nvm/versions/node/v22.11.0/lib/node_modules/npm/node_modules/libnpmexec/lib/index.js:202:15)
+14 verbose stack     at async Npm.exec (/Users/bethegnt/.nvm/versions/node/v22.11.0/lib/node_modules/npm/lib/npm.js:207:9)
+14 verbose stack     at async module.exports (/Users/bethegnt/.nvm/versions/node/v22.11.0/lib/node_modules/npm/lib/cli/entry.js:74:5)
+15 verbose pkgid tailwindcss@4.1.17
+16 error could not determine executable to run
+17 verbose cwd /Users/bethegnt/Documents/app
+18 verbose os Darwin 25.1.0
+19 verbose node v22.11.0
+20 verbose npm  v10.9.0
+21 verbose exit 1
+22 verbose code 1
+23 error A complete log of this run can be found in: /Users/bethegnt/.npm/_logs/2025-11-19T16_52_34_595Z-debug-0.log

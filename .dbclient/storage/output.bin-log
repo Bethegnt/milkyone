@@ -1,0 +1,49 @@
+[34m2025-08-12 17:30:35[39m Executing: CREATE DATABASE FORTESTING
+[34m2025-08-12 17:30:35[39m [32mResult: 1 rows affected in 14ms[39m
+[34m2025-08-12 17:30:50[39m Executing: SHOW DATABASES
+[34m2025-08-12 17:30:50[39m [32mResult: 6 rows retrieved in 3ms[39m
+[34m2025-08-12 17:31:18[39m Executing: DROP DATABASE FORTESTING
+[34m2025-08-12 17:31:19[39m [32mResult: 0 rows affected in 12ms[39m
+[34m2025-08-12 17:31:19[39m Executing: DROP DATABASE FORTESTING
+[34m2025-08-12 17:31:19[39m [31mExecute fail : Can't drop database 'fortesting'; database doesn't exist[39m
+[34m2025-08-12 17:32:46[39m Executing: CREATE DATABASE FORTESTING IF NOT EXISTS
+[34m2025-08-12 17:32:46[39m [31mExecute fail : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IF NOT EXISTS' at line 1[39m
+[34m2025-08-12 17:33:12[39m Executing: CREATE DATABASE IF NOT EXISTS FORTESTING
+[34m2025-08-12 17:33:12[39m [32mResult: 1 rows affected in 6ms[39m
+[34m2025-08-12 17:33:48[39m Executing: DROP DATABASE FORTESTING
+[34m2025-08-12 17:33:48[39m [32mResult: 0 rows affected in 5ms[39m
+[34m2025-08-12 17:36:39[39m Executing: USE CLASSDB
+[34m2025-08-12 17:36:39[39m [32mResult: 0 rows affected in 5ms[39m
+[34m2025-08-12 17:36:49[39m Executing: SHOW TABLES
+[34m2025-08-12 17:36:49[39m [32mResult: Completed in 4ms[39m
+[34m2025-08-19 15:18:25[39m Executing: CREATE DATABASE SOMETHING
+[34m2025-08-19 15:18:25[39m [32mResult: 1 rows affected in 10ms[39m
+[34m2025-08-19 15:28:45[39m Executing: SHOW DATABASES
+[34m2025-08-19 15:28:45[39m [32mResult: 6 rows retrieved in 16ms[39m
+[34m2025-08-19 15:29:14[39m Executing: CREATE DATABASE IF NOT EXISTS FUNCTIONAL
+[34m2025-08-19 15:29:14[39m [32mResult: 1 rows affected in 12ms[39m
+[34m2025-08-19 15:29:26[39m Executing: SHOW DATABASES
+[34m2025-08-19 15:29:26[39m [32mResult: 7 rows retrieved in 3ms[39m
+[34m2025-08-19 15:32:33[39m Executing: SHOW DATABASES
+[34m2025-08-19 15:32:33[39m [32mResult: 7 rows retrieved in 6ms[39m
+[34m2025-08-19 15:33:00[39m Executing: DROP DATABASE CLASSDB
+[34m2025-08-19 15:33:00[39m [32mResult: 0 rows affected in 18ms[39m
+[34m2025-08-19 16:01:17[39m Executing: USE SOMETHING
+[34m2025-08-19 16:01:17[39m [32mResult: 0 rows affected in 32ms[39m
+[34m2025-08-19 16:01:29[39m Executing: CREATE TABLE
+[34m2025-08-19 16:01:29[39m [31mExecute fail : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1[39m
+[34m2025-08-19 16:01:51[39m Executing: CREATE TABLE SOMETHING
+[34m2025-08-19 16:01:51[39m [31mExecute fail : A table must have at least one visible column.[39m
+[34m2025-08-19 16:01:58[39m Executing: CREATE TABLE X
+[34m2025-08-19 16:01:58[39m [31mExecute fail : A table must have at least one visible column.[39m
+[34m2025-08-19 16:02:04[39m Executing: CREATE TABLE X,Y
+[34m2025-08-19 16:02:04[39m [31mExecute fail : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ',Y' at line 1[39m
+[34m2025-08-19 16:02:10[39m Executing: CREATE TABLE X=0
+[34m2025-08-19 16:02:10[39m [31mExecute fail : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '=0' at line 1[39m
+[34m2025-08-19 16:02:14[39m Executing: CREATE TABLE
+[34m2025-08-19 16:02:14[39m [31mExecute fail : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1[39m
+[34m2025-08-19 16:02:19[39m Executing: CREATE TABLE ''
+[34m2025-08-19 16:02:19[39m [31mExecute fail : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '''' at line 1[39m
+[34m2025-08-19 16:02:20[39m Executing: CREATE TABLE ''
+[34m2025-08-19 16:02:20[39m [31mExecute fail : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '''' at line 1[39m
+

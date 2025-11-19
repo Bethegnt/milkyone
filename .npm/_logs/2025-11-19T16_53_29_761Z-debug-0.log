@@ -1,0 +1,13 @@
+0 verbose cli /Users/bethegnt/.nvm/versions/node/v22.11.0/bin/node /Users/bethegnt/.nvm/versions/node/v22.11.0/bin/npm
+1 info using npm@10.9.0
+2 info using node@v22.11.0
+3 silly config load:file:/Users/bethegnt/.nvm/versions/node/v22.11.0/lib/node_modules/npm/npmrc
+4 silly config load:file:/Users/bethegnt/Documents/app/.npmrc
+5 silly config load:file:/Users/bethegnt/.npmrc
+6 silly config load:file:/Users/bethegnt/.nvm/versions/node/v22.11.0/etc/npmrc
+7 verbose title npm run dev
+8 verbose argv "run" "dev"
+9 verbose logfile logs-max:10 dir:/Users/bethegnt/.npm/_logs/2025-11-19T16_53_29_761Z-
+10 verbose logfile /Users/bethegnt/.npm/_logs/2025-11-19T16_53_29_761Z-debug-0.log
+11 silly logfile start cleaning logs, removing 1 files
+12 silly logfile done cleaning log files

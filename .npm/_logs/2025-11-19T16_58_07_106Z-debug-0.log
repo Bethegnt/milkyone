@@ -1,0 +1,42 @@
+0 verbose cli /Users/bethegnt/.nvm/versions/node/v22.11.0/bin/node /Users/bethegnt/.nvm/versions/node/v22.11.0/bin/npm
+1 info using npm@10.9.0
+2 info using node@v22.11.0
+3 silly config load:file:/Users/bethegnt/.nvm/versions/node/v22.11.0/lib/node_modules/npm/npmrc
+4 silly config load:file:/Users/bethegnt/Library/Caches/typescript/5.9/.npmrc
+5 silly config load:file:/Users/bethegnt/.npmrc
+6 silly config load:file:/Users/bethegnt/.nvm/versions/node/v22.11.0/etc/npmrc
+7 verbose title npm install types-registry@latest
+8 verbose argv "install" "--ignore-scripts" "types-registry@latest"
+9 verbose logfile logs-max:10 dir:/Users/bethegnt/.npm/_logs/2025-11-19T16_58_07_106Z-
+10 verbose logfile /Users/bethegnt/.npm/_logs/2025-11-19T16_58_07_106Z-debug-0.log
+11 silly logfile start cleaning logs, removing 1 files
+12 silly packumentCache heap:2197815296 maxSize:549453824 maxEntrySize:274726912
+13 silly logfile done cleaning log files
+14 silly packumentCache corgi:https://registry.npmjs.org/types-registry cache-miss
+15 http fetch GET 200 https://registry.npmjs.org/types-registry 248ms (cache revalidated)
+16 silly packumentCache corgi:https://registry.npmjs.org/types-registry set size:612042 disposed:false
+17 silly idealTree buildDeps
+18 silly fetch manifest types-registry@0.1.746
+19 silly packumentCache full:https://registry.npmjs.org/types-registry cache-miss
+20 http fetch GET 200 https://registry.npmjs.org/types-registry 54ms (cache revalidated)
+21 silly packumentCache full:https://registry.npmjs.org/types-registry set size:1311504 disposed:false
+22 silly placeDep ROOT types-registry@0.1.746 REPLACE for:  want: 0.1.746
+23 silly reify moves {}
+24 silly audit bulk request {
+24 silly audit   '@types/less': [ '3.0.8' ],
+24 silly audit   '@types/node': [ '24.10.1' ],
+24 silly audit   '@types/react': [ '19.2.6' ],
+24 silly audit   '@types/react-dom': [ '19.2.3' ],
+24 silly audit   '@types/stylus': [ '0.48.43' ],
+24 silly audit   csstype: [ '3.2.3' ],
+24 silly audit   'undici-types': [ '7.16.0' ],
+24 silly audit   'types-registry': [ '0.1.746' ]
+24 silly audit }
+25 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 314ms
+26 silly audit report {}
+27 verbose cwd /Users/bethegnt/Library/Caches/typescript/5.9
+28 verbose os Darwin 25.1.0
+29 verbose node v22.11.0
+30 verbose npm  v10.9.0
+31 verbose exit 0
+32 info ok
