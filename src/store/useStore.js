@@ -119,6 +119,7 @@ export const useStore = create((set) => ({
     })),
 
     // User Actions
+    setUser: (user) => set({ user }),
     login: (role = 'customer') => set({
         user: {
             id: 'u1',
