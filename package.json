@@ -10,12 +10,16 @@
         "preview": "vite preview"
     },
     "dependencies": {
-        "react": "^18.2.0",
-        "react-dom": "^18.2.0",
+        "clsx": "^2.0.0",
+        "date-fns": "^4.1.0",
         "framer-motion": "^10.16.4",
         "lucide-react": "^0.292.0",
-        "clsx": "^2.0.0",
-        "tailwind-merge": "^2.0.0"
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "react-router-dom": "^7.9.6",
+        "recharts": "^3.4.1",
+        "tailwind-merge": "^2.0.0",
+        "zustand": "^5.0.8"
     },
     "devDependencies": {
         "@types/react": "^18.2.37",
