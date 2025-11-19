@@ -1,6 +1,6 @@
 import React from 'react';
 import { useStore } from '../store/useStore';
-import StatCard from '../components/molecules/StatCard';
+import AdminStatCard from '../components/molecules/AdminStatCard';
 import { Users, ShoppingBag, Droplets, IndianRupee } from 'lucide-react';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, LineChart, Line } from 'recharts';
 
@@ -31,33 +31,33 @@ const AdminDashboard = () => {
 
             {/* KPI Grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                <StatCard
+                <AdminStatCard
                     title="Total Customers"
                     value={totalCustomers}
                     icon={Users}
                     color="blue"
-                    trend={12}
+                    delta="+12%"
                 />
-                <StatCard
+                <AdminStatCard
                     title="Total Orders"
                     value={totalOrders}
                     icon={ShoppingBag}
                     color="purple"
-                    trend={5}
+                    delta="+5%"
                 />
-                <StatCard
+                <AdminStatCard
                     title="Today's Collection"
                     value={`${todayCollection} L`}
                     icon={Droplets}
                     color="green"
-                    trend={-2}
+                    delta="-2%"
                 />
-                <StatCard
+                <AdminStatCard
                     title="Total Revenue"
                     value={`₹${totalRevenue}`}
                     icon={IndianRupee}
                     color="orange"
-                    trend={8}
+                    delta="+8%"
                 />
             </div>
 
