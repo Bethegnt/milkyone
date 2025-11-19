@@ -94,6 +94,7 @@ export const useStore = create((set) => ({
     customers: MOCK_CUSTOMERS,
     orders: MOCK_ORDERS,
     collections: MOCK_COLLECTIONS,
+    subscriptions: [],
 
     // Cart Actions
     addToCart: (product, qty = 1) => set((state) => {
@@ -111,6 +112,11 @@ export const useStore = create((set) => ({
         cart: state.cart.filter(item => item.id !== productId)
     })),
     clearCart: () => set({ cart: [] }),
+
+    // Subscription Actions
+    addSubscription: (plan) => set((state) => ({
+        subscriptions: [...state.subscriptions, { ...plan, id: `sub_${Date.now()}`, status: 'active' }]
+    })),
 
     // User Actions
     login: (role = 'customer') => set({

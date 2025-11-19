@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { ShoppingCart, Droplets, Info } from 'lucide-react';
 import Button from '../atoms/Button';
@@ -47,16 +48,21 @@ const ProductCard = ({ product }) => {
 
                 <div className="flex items-center justify-between mt-auto pt-4 border-t border-slate-100">
                     <div className="flex flex-col">
-                        <span className="text-xs text-slate-400">Price</span>
+                        <span className="text-xs text-slate-400">Price ({product.packSizeLitres}L)</span>
                         <span className="text-lg font-bold text-slate-900">₹{product.pricePerLitre}</span>
                     </div>
-                    <Button
-                        size="sm"
-                        onClick={() => addToCart(product)}
-                        icon={ShoppingCart}
-                    >
-                        Add
-                    </Button>
+                    <div className="flex gap-2">
+                        <Link to={`/products/${product.id}`}>
+                            <Button size="sm" variant="secondary">Details</Button>
+                        </Link>
+                        <Button
+                            size="sm"
+                            onClick={() => addToCart(product)}
+                            icon={ShoppingCart}
+                        >
+                            Add
+                        </Button>
+                    </div>
                 </div>
             </div>
         </motion.div>
